@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+    recsys_app:
+        image: hunchpounch/recsys-movies:1.4
+        restart: always
+        stop_signal: SIGINT
+        env_file:
+            - .env
