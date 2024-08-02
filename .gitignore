@@ -1,3 +1,4 @@
 .vscode/
 venv/
 .env
+cosine_sim.pkl
