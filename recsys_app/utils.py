@@ -1,12 +1,13 @@
 import os
+from pathlib import Path
 import pickle
 
 import requests
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 import streamlit as st
 
 # загрузка переменных окружения из .env файла
-load_dotenv()
+load_dotenv(find_dotenv())
 
 # TMDB API ключ
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
@@ -26,6 +27,7 @@ def fetch_poster(movie_id):
             return None
     except requests.exceptions.HTTPError as errh:
         st.error(f"HTTP Error: {errh}")
+        st.stop()
     except requests.exceptions.ConnectionError as errc:
         st.error(f"Error Connecting: {errc}")
     except requests.exceptions.Timeout as errt:

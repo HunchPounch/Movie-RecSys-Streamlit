@@ -12,4 +12,4 @@ COPY --from=compile-image /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 WORKDIR /app
 COPY recsys_app /app/recsys_app
-CMD ["streamlit", "run", "app"]
+CMD ["streamlit", "run", "recsys_app/app.py"]
