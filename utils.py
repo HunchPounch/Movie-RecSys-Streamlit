@@ -1,4 +1,6 @@
 import os
+import pickle
+
 import requests
 from dotenv import load_dotenv
 import streamlit as st
