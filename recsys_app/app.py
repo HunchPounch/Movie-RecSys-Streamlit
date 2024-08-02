@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import pandas
 
-from utils import fetch_poster, recommend, improved_recommendations
+from recsys_app.utils import fetch_poster, recommend, improved_recommendations
 
 #st.header('Movie Recommender System Using Machine Learning')
 st.markdown("<h2 style='text-align: center;'>Movie Recommender System Using Machine Learning</h2>", unsafe_allow_html=True)
