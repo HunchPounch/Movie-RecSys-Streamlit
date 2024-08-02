@@ -2,4 +2,3 @@
 **/__pycache__
 venv/
 .env
-cosine_sim.pkl
