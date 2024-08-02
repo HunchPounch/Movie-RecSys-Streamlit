@@ -2,15 +2,28 @@ import streamlit as st
 import pickle
 import pandas
 
-from recsys_app.utils import fetch_poster, recommend, improved_recommendations
+from utils import fetch_poster, recommend, improved_recommendations
+
+
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("https://getwallpapers.com/wallpaper/full/4/4/c/327072.jpg");
+        background-size: cover;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 #st.header('Movie Recommender System Using Machine Learning')
 st.markdown("<h2 style='text-align: center;'>Movie Recommender System Using Machine Learning</h2>", unsafe_allow_html=True)
 # загрузка файлов
-with open('src/movies_df.pkl', 'rb') as f:
+with open('recsys_app/src/movies_df.pkl', 'rb') as f:
     movies = pickle.load(f)
 
-with open('src/cosine_sim.pkl', 'rb') as f:
+with open('recsys_app/src/cosine_sim.pkl', 'rb') as f:
     similarity = pickle.load(f)
 
 movie_list = movies['title'].values
