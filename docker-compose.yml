@@ -2,6 +2,8 @@ version: "3.8"
 services:
     recsys_app:
         image: hunchpounch/recsys-movies:1.4
+        ports:
+            - "8501:8501"
         restart: always
         stop_signal: SIGINT
         env_file:
