@@ -42,8 +42,8 @@ if st.button('Show Recommendation'):
     for i in range(num_recommendations):
         col_index = i % num_cols
         with col_list[col_index]:
-            st.text(recommended_movie_names[i])
             st.image(recommended_movie_posters[i])
+            st.text(recommended_movie_names[i])
 
 if st.button('Show Improved Recommendations'):
     recommendations = improved_recommendations(selected_movie,movies,similarity)
