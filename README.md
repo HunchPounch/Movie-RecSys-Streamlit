@@ -1,4 +1,4 @@
-[<img src="https://img.shields.io/badge/Streamlit-%40RecSysApp-green">]([https://t.me/StyleTransferPicBot](https://hunchpounch-movie-recsys-recsys-appapp-3r7kil.streamlit.app))
+[<img src="https://img.shields.io/badge/Streamlit-%40RecSysApp-green">](https://hunchpounch-movie-recsys-recsys-appapp-3r7kil.streamlit.app)
 
 # Movie Recommendation System
 ## Описание
