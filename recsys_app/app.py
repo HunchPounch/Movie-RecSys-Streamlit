@@ -69,5 +69,5 @@ if st.button('Show Improved Recommendations'):
             
             for i in range(start_index, end_index):
                 with col_list[i - start_index]:
-                    st.text(recommended_movie_names[i])
                     st.image(recommended_movie_posters[i])
+                    st.text(recommended_movie_names[i])
