@@ -42,7 +42,7 @@ if st.button('Show Recommendation'):
     for i in range(num_recommendations):
         col_index = i % num_cols
         with col_list[col_index]:
-            st.image(recommended_movie_posters[i])
+            st.image(recommended_movie_posters[i], output_format='PNG')
             st.text(recommended_movie_names[i])
 
 if st.button('Show Improved Recommendations'):
